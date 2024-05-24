@@ -15,10 +15,38 @@ html {
 
 .top-container-item_right ul li a {
     text-decoration: none;
+    color: #000000;
+    text-decoration: none;
+    display: block; /*幅と高さを持ったブロック要素*/
+    line-height: 60px; /*ヘッダーの高さと同じ60px*/
 }
+
+a{
+    position: relative;
+}
+
+a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.5s;  /*変形の時間*/
+    }
+
+    a:hover::after {
+    transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+    transform-origin: left top; /*左から右に向かう*/
+    }
+
 
 .nav-container {
     display: grid;
     list-style: none;
     grid-template-columns: 110px 110px 110px;
+    gap: 20px;
 }
