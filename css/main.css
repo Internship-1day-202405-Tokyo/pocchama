@@ -11,5 +11,9 @@ main {
 }
 
 h2 {
-  border-bottom: solid;
+  margin:auto;
+  border: 15px solid #f3f36a;
+  border-radius: 30px;
+  width:10em;
+  padding: 15px;
 }
