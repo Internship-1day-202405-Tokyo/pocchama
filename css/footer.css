@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* フッター */
+
+.table-container {
+    margin: 0 auto; /* 横方向に中央揃え */
+    width: fit-content; /* テーブルの幅に合わせる */
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
