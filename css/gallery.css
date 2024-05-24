@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* 全体 */
+html {
+  /* font-size: 10px; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* メイン */
+main {
+  text-align: center;
+}
+
+/* ギャラリービュー */
+.images-contents {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 30px;
+  max-width: fit-content;
+  margin: auto;
+}
+.images-contents_items {
+  text-align: center;
+  border: solid;
+  border-color: rgb(241, 241, 14);
+  border-radius: 10%;
+}
